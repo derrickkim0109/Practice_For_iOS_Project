@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FXW-Zn-fyY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleGestureReconizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxy-Ui-siN">
+                                <rect key="frame" x="50" y="94" width="314" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPC-G5-Jhz">
+                                <rect key="frame" x="10" y="159" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="oPC-G5-Jhz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="1HM-nD-BJ2"/>
+                            <constraint firstItem="Pxy-Ui-siN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="2Fi-B9-eU2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oPC-G5-Jhz" secondAttribute="trailing" constant="10" id="AON-Fa-Y7C"/>
+                            <constraint firstItem="oPC-G5-Jhz" firstAttribute="top" secondItem="Pxy-Ui-siN" secondAttribute="bottom" constant="44" id="SuT-Fh-PUZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pxy-Ui-siN" secondAttribute="trailing" constant="50" id="WsD-8x-U0l"/>
+                            <constraint firstItem="Pxy-Ui-siN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="sNa-0Z-AKA"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ezX-eG-jDd" appends="YES" id="csB-YS-phC"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="directionLabel" destination="Pxy-Ui-siN" id="HvH-W0-dqM"/>
+                        <outlet property="locationLabel" destination="oPC-G5-Jhz" id="Qnj-qg-Zt0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ezX-eG-jDd">
+                    <connections>
+                        <action selector="panGesture:" destination="BYZ-38-t0r" id="jJF-YQ-ypw"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="20" y="98"/>
+        </scene>
+        <!--Touch Event Handling View Controller-->
+        <scene sceneID="UYR-Fx-fTc">
+            <objects>
+                <viewController id="FXW-Zn-fyY" customClass="TouchEventHandlingViewController" customModule="SampleGestureReconizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Acm-7Y-XHQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkL-tr-zsp">
+                                <rect key="frame" x="20" y="79" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXP-xw-384">
+                                <rect key="frame" x="20" y="127" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tct-95-xKa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tct-95-xKa" firstAttribute="trailing" secondItem="bkL-tr-zsp" secondAttribute="trailing" constant="20" id="0Q5-rd-ZAr"/>
+                            <constraint firstItem="LXP-xw-384" firstAttribute="leading" secondItem="Tct-95-xKa" secondAttribute="leading" constant="20" id="6nv-h2-khO"/>
+                            <constraint firstItem="Tct-95-xKa" firstAttribute="trailing" secondItem="LXP-xw-384" secondAttribute="trailing" constant="20" id="7W9-eO-kOV"/>
+                            <constraint firstItem="bkL-tr-zsp" firstAttribute="leading" secondItem="Tct-95-xKa" secondAttribute="leading" constant="20" id="F0E-hH-4tq"/>
+                            <constraint firstItem="bkL-tr-zsp" firstAttribute="top" secondItem="Tct-95-xKa" secondAttribute="top" constant="35" id="Il0-dg-l0T"/>
+                            <constraint firstItem="LXP-xw-384" firstAttribute="top" secondItem="bkL-tr-zsp" secondAttribute="bottom" constant="27" id="WqS-Ha-bBk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="directionLabel" destination="LXP-xw-384" id="Qao-dw-a5a"/>
+                        <outlet property="myLabel" destination="bkL-tr-zsp" id="kxi-Kb-1pD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pjB-Ff-PmY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86.956521739130437" y="-575.22321428571422"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
